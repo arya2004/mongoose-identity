@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/arya2004/mongoose-identity/issues"
   },
-  "homepage": "https://github.com/arya2004/mongoose-identity#readme"
+  "homepage": "https://github.com/arya2004/mongoose-identity#readme",
+  "dependencies": {
+    "mongoose": "^7.4.2"
+  }
 }

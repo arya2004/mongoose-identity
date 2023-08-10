@@ -1,0 +1,24 @@
+const mongoose = require('mongoose');
+const Schema = mongoose.Schema
+
+const userLoginSchema = new Schema({
+    LoginProvider: { 
+        type: String, 
+        required: true 
+    },
+    ProviderKey: { 
+        type: String, 
+        required: true 
+    },
+    ProviderDisplayName: { 
+        type: String,
+        required: false
+    },
+    UserId: { type: mongoose.Schema.Types.ObjectId, 
+        ref: 'mongooseUsers', 
+        required: true 
+    },
+});
+
+module.exports = mongoose.model('mongooseUserLogins', userLoginSchema);
+
