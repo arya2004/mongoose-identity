@@ -15,10 +15,10 @@ const userLoginSchema = new Schema({
         required: false
     },
     UserId: { type: mongoose.Schema.Types.ObjectId, 
-        ref: 'mongooseUsers', 
+        ref: 'mongoose_user', 
         required: true 
     },
 });
 
-module.exports = mongoose.model('mongooseUserLogins', userLoginSchema);
+module.exports = mongoose.model('mongoose_user_login', userLoginSchema);
 

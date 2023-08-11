@@ -20,6 +20,6 @@ const userTokenSchema = new mongoose.Schema({
 },
 });
 
-const UserTokenModel = mongoose.model('mongooseUserTokens', userTokenSchema);
+const UserTokenModel = mongoose.model('mongoose_user_token', userTokenSchema);
 
 module.exports = UserTokenModel;

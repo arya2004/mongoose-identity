@@ -4,15 +4,15 @@ const Schema = mongoose.Schema;
 const userRoleSchema = new Schema({
     userId: {
       type: mongoose.Schema.Types.ObjectId,
-      ref: 'mongooseUsers',
+      ref: 'mongoose_user',
       required: true,
     },
     roleId: {
       type: mongoose.Schema.Types.ObjectId,
-      ref: 'mongooseRoles',
+      ref: 'mongoose_role',
       required: true,
     },
   });
   
-  module.exports =  mongoose.model('mongooseUserRoles', userRoleSchema);
+  module.exports =  mongoose.model('mongoose_user_role', userRoleSchema);
   

@@ -4,7 +4,7 @@ const Schema = mongoose.Schema
 const userClaimSchema = new Schema({
     userId: {
         type: mongoose.Schema.Types.ObjectId,
-        ref: 'mongooseUsers',
+        ref: 'mongoose_user',
         required: true
     },
     claimType: { 
@@ -17,5 +17,5 @@ const userClaimSchema = new Schema({
     },
 });
 
-module.exports = mongoose.model('mongooseUserClaims', userClaimSchema);
+module.exports = mongoose.model('mongoose_user_claim', userClaimSchema);
 

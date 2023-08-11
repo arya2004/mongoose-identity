@@ -4,7 +4,7 @@ const Schema = mongoose.Schema;
 const roleClaimSchema = new Schema({
     roleId: {
         type: mongoose.Schema.Types.ObjectId,
-        ref: 'mongooseRoles',
+        ref: 'mongoose_role',
         required: true,
       },
     claimType: {
@@ -17,5 +17,5 @@ const roleClaimSchema = new Schema({
         },
 });
 
-module.exports  = mongoose.model('mongooseRoleClaims', roleClaimSchema);
+module.exports  = mongoose.model('mongoose_role_claim', roleClaimSchema);
 

@@ -70,5 +70,5 @@ const userSchema = new Schema({
     },
   });
 
-module.exports = mongoose.model("mongooseUsers", userSchema);
+module.exports = mongoose.model("mongoose_user", userSchema);
 

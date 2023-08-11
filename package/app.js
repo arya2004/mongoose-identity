@@ -1,8 +1,8 @@
-const mongooseRoles = require("./models/Role")
+const mongoose_role = require("./models/Role")
 
 const mongoose = require('mongoose');
 
-mongoose.connect('mongodb://127.0.0.1:27017/i', {
+mongoose.connect('mongodb://127.0.0.1:27017/qq', {
  
 });
 
@@ -12,5 +12,5 @@ db.once("open", () => {
     console.log("Database connected");
 });
 
-const role = new mongooseRoles({name: "rtes"})
+const role = new mongoose_role({name: "kek"})
 role.save()
